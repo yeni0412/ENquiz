@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f2f5;
+}
+
+.container {
+    background-color: white;
+    border-radius: 10px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 600px;
+}
+
+h1 {
+    text-align: center;
+    color: #1a73e8;
+    margin-bottom: 2rem;
+}
+
+#timer {
+    text-align: center;
+    font-size: 1.2rem;
+    color: #202124;
+    margin-bottom: 1rem;
+    padding: 0.5rem;
+    background-color: #e8f0fe;
+    border-radius: 5px;
+}
+
+#word-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+#word {
+    font-size: 2rem;
+    color: #202124;
+    font-weight: bold;
+}
+
+.icon-btn {
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: #1a73e8;
+    cursor: pointer;
+    padding: 0.5rem;
+    transition: color 0.2s;
+}
+
+.icon-btn:hover {
+    color: #1557b0;
+}
+
+#question-container {
+    margin-bottom: 1.5rem;
+}
+
+#question {
+    font-size: 1.2rem;
+    color: #202124;
+    margin-bottom: 1rem;
+}
+
+.option {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 0.5rem 0;
+    background-color: #f8f9fa;
+    border: 2px solid #e8eaed;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 1.1rem;
+}
+
+.option:hover {
+    background-color: #e8f0fe;
+    border-color: #1a73e8;
+}
+
+.option.correct {
+    background-color: #e6f4ea;
+    border-color: #137333;
+}
+
+.option.wrong {
+    background-color: #fce8e6;
+    border-color: #c5221f;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem 0;
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.2s;
+}
+
+.btn:hover {
+    background-color: #1557b0;
+}
+
+.hide {
+    display: none;
+}
+
+#result-container {
+    text-align: center;
+}
+
+#score {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #1a73e8;
+}
